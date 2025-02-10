@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 요소</title>
+</head>
+<body>
+  <!--! form 요소: 사용자로부터 입력을 받고 처리하기 위한 요소 -->
+  <!--? 입력에 대한 양식과 처리 방식을 정의 -->
+  <!--? 입력을 위한 요소: input, textarea, select, button 요소 -->
+  <!--? form 요소는 반드시 입력 요소를 요구함 -->
+
+  <!--? action 속성으로 form에 작성된 데이터를 제출할 위치를 지정 -->
+  <!--? method 속성으로 해당 양식 제출의 목적이 무엇인지 지정 -->
+
+  <!--? GET 방식: 서버에 HTML 혹은 JSON의 데이터를 받기위한 요청 -->
+  <!--? form 요소의 기본 방식, 브라우저 URL창에 입력하는 기본 방식 -->
+  <form action="https://google.com/search" method="GET">
+    <!--! input 요소: 사용자로부터 데이터를 입력받기 위한 요소 -->
+    <!--? name 속성으로 해당 입력 데이터의 이름을 지정할 수 있음 -->
+    <input name="input**" />
+    <input name="second**" />
+    <input name="q" />
+    <!--! button 요소: 사용자가 클릭할 수 있는 버튼을 표시하는 요소 -->
+    <!--? 버튼은 타입이 존재 (submit, reset, button) -->
+    <!--? form 안에 있는 버튼에 타입을 지정하지 않으면 기본적으로 submit으로 작동 -->
+    <!--? submit 타입: form 요소의 데이터를 action에 제출 -->
+    <button>버튼</button>
+  </form>
+</body>
+</html>

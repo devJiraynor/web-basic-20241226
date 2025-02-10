@@ -56,5 +56,60 @@
   <!--? range: 숫자를 선택폭의 제한을 주는 타입 -->
   <input type="range" min="0" max="10" step="2" />
 
+  <!--? file: 파일을 입력할 수 있도록 하는 타입 -->
+  <!--? accept 속성: 파일 선택의 제한, 확장자 명으로 지정 -->
+  <input type="file" accept=".jpeg, .png" />
+  <input type="file" accept="image/*,.pdf" />
+
+  <!--? color: 색상을 선택할 수 있도록 하는 타입 -->
+  <input type="color" />
+
+  <!--? hidden: 화면에 보이지 않음 -->
+  숨겨져<input type="hidden" />있음
+
+  <form>
+    <input name="normal" />
+    <!--? 사용자에게는 데이터를 보여주지 않고 관리하고 싶을 때 사용 -->
+    <input type="hidden" name="hidden" value="hidden" />
+    <button>전송</button>
+  </form>
+
+  <!--? checkbox: 주어진 항목 중 다수를 선택 -->
+  <!--? value를 반드시 기입해야함 -->
+  <form>
+    <input name="skill" type="checkbox" value="java" />자바
+    <input name="skill" type="checkbox" value="python" />파이썬
+    <!--? checked 속성: 체크된 상태로 화면에 표시 -->
+    <input name="skill" type="checkbox" value="html" checked />HTML
+    <button>전송</button>
+  </form>
+
+  <!--? radio: 주어진 리스트 중에 하나 선택 -->
+  <!--? name 속성으로 radio를 그룹화 할 수 있음 -->
+  <!--? 그룹화된 요소들 중 하나만 선택이 가능, 선택했다면 그룹화내에서 취소가 불가능 -->
+  <form>
+    <input name="a" type="radio" value="1" checked />1
+    <input name="a" type="radio" value="2" />2
+    <input name="b" type="radio" value="3" />3
+    <input name="b" type="radio" value="4" />4
+  </form>
+
+  <!--! select 요소: 주어진 리스트 중에 요소를 선택할 수 있도록 하는 요소 (드랍다운 박스로 표시됨) -->
+  <!--? multiple 속성: 다중 선택 가능 -->
+  <select multiple>
+    <!--! optgroup 요소: option 요소를 그룹화하는 요소 -->
+    <optgroup label="과일">
+      <!--! option 요소: select에서 선택할 수 있는 옵션을 나타내는 요소 -->
+      <option value="apple">사과</option>
+      <!--? selected 속성: select의 옵션을 기본값으로 선택 -->
+      <option value="banana" selected>바나나</option>
+      <option value="cacao">카카오</option>
+    </optgroup>
+    <optgroup label="동물">
+      <option value="dog">강아지</option>
+      <option value="cat">고양이</option>
+    </optgroup>
+  </select>
+
 </body>
 </html>

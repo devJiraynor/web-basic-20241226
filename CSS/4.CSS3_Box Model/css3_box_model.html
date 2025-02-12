@@ -48,16 +48,40 @@
         */
 
         /*
-            max / min - width / height : 
+            max / min - width / height : 컨텐츠의 (최대, 최소) (너비, 높이)를 지정할 수 있음
         */
+        .width-height-2 {
+            width: 50vw;
+            min-width: 300px;
+            max-width: 600px;
 
+            height: 50vh;
+            min-height: 150px;
+            max-height: 300px;
+        }
 
 
         /*
             margin / padding :
-                - 
+                - 마진과 패딩은 컨탠츠 기준으로 4개 방향(top, right, bottom, left)에 대해서 지정 가능
         */
-        
+        hr {
+            margin: 0;
+        }
+
+        .margin-padding-1 {
+            border: 5px solid red;
+
+            padding-top: 40px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+        }
 
         /*
             margin[padding] : 상 우 하 좌;
@@ -65,20 +89,28 @@
             margin[padding] : 상하 우좌;
             margin[padding] : 상우하좌;
         */
+        .margin-padding-2 {
+            border: 5px solid blue;
+
+            padding: 40px 30px 20px 10px;
+            margin: 10px 20px 30px 40px;
+        }
 
 
 
         /*
             border : 
-                - 
+                - 테두리 선의 스타일, 두께, 색상, 모서리 둥글기를 지정 가능
         */
 
         /*
-            border-style : 
-                - 
-                - 
+            border-style : 테두리 선의 스타일 지정
+                - solid: 실선
+                - none: 테두리 제거
         */
-        
+        .border-style-1 {
+            border-style: double;
+        }
 
         /*
             border-style : 상 우 하 좌;
@@ -86,12 +118,18 @@
             border-style : 상하 우좌;
             border-style : 상우하좌;
         */
-
+        .border-style-2 {
+            border-style: none solid;
+        }
 
         /*
-            border-width : 
+            border-width : 테두리 선의 두께 지정, border-style이 반드시 지정되어야 함
         */
-        
+        .border-width-1 {
+            border-style: solid;
+            border-width: 5px;
+        }
+
 
         /*
             border-width : 상 우 하 좌;
@@ -99,12 +137,20 @@
             border-width : 상하 우좌;
             border-width : 상우하좌;
         */
+        .border-width-2 {
+            border-style: dotted;
+            border-width: 8px 6px 4px 2px;
+        }
 
 
         /*
-            border-color : 
+            border-color : 테두리 선의 색상 지정, border-style이 반드시 지정되어야함
         */
-        
+        .border-color-1 {
+            border-style: solid;
+            border-width: 5px;
+            border-color: crimson;
+        }
 
         /*
             border-color : 상 우 하 좌;
@@ -112,6 +158,11 @@
             border-color : 상하 우좌;
             border-color : 상우하좌;
         */
+        .border-color-2 {
+            border-style: solid;
+            border-width: 5px;
+            border-color: red green blue;
+        }
 
 
         /*

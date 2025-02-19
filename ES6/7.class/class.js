@@ -27,6 +27,7 @@ console.log('==================================================');
     - 생성자의 매개변수로 각 속성의 값을 받아와서 초기화
     - 자바스크립트의 생성자는 오버로딩이 안됨
 */
+
 class King {
     // constructor() {}
 
@@ -136,9 +137,46 @@ console.log('==================================================');
 
 /*
     클래스 상속 : 
-    - 
-    - 
-    - 
+    - extends 키워드를 사용하여 클래스 상속
+    - 메서드 오버라이딩 가능
+    - super 키워드로 부모 클래스 참조 가능
 */
 
+class ParentClass {
 
+    parentField;
+
+    constructor(parentField) {
+        this.parentField = parentField;
+    }
+
+    parentMethod () {
+        console.log('부모 메서드');
+    }
+
+}
+
+class ChildClass extends ParentClass {
+
+    childField;
+
+    constructor(parentField, childField) {
+        super(parentField);
+        this.childField = childField;
+    }
+
+    childMethod () {
+        console.log('자식 메서드');
+    }
+
+    parentMethod () {
+        super.parentMethod();
+        console.log('오버라이딩 메서드');
+    }
+
+}
+
+const childInstance = new ChildClass('부모', '자식');
+console.log(childInstance);
+childInstance.childMethod();
+childInstance.parentMethod();

@@ -98,3 +98,6 @@ seajong.death = '1450-04-08';
 
 
 console.log('==================================================');
+
+const a: King | Human = jeonjong;
+const b: Human = a;
